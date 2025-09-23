@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vocabulary Trainer for Minii Boss</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">Vocabulary Trainer for Minii Boss</header>
+
+  <div class="app">
+    <aside class="buckets" aria-label="Antwort-Eimer">
+      <div class="bucket" aria-live="polite">
+        <div class="bucket-header"><span class="icon">✅</span> Richtig beantwortet</div>
+        <div class="bucket-body" id="bucket-correct"></div>
+      </div>
+      <div class="bucket" aria-live="polite">
+        <div class="bucket-header"><span class="icon">❌</span> Falsch beantwortet</div>
+        <div class="bucket-body" id="bucket-wrong"></div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <section class="card" id="card" aria-live="polite">
+        <h1 id="card-text">Vokabel-Trainer</h1>
+        <!-- Bild-Overlay (Popups für richtig/falsch) -->
+        <div id="fx" class="fx" aria-hidden="true"></div>
+
+        <!-- Start-Zeile -->
+        <div class="start-row" id="start-row">
+          <button class="start-btn" id="start-btn" type="button" aria-label="Training starten">Start</button>
+          <div class="start-sub">or press Enter</div>
+        </div>
+
+        <div class="hint" id="card-hint">
+          Klicke auf Start, dann erscheint ein englisches Wort.
+          Tipp die deutsche Übersetzung (mit Artikel) ein und drücke Enter.
+        </div>
+      </section>
+
+      <form id="answer-form" class="answer-form" autocomplete="off">
+        <input id="answer-input" type="text"
+               placeholder="Deutsche Übersetzung (mit Artikel) – Enter zum Prüfen" disabled />
+        <button type="submit" id="submit-btn" disabled>Prüfen</button>
+        <button type="button" id="reveal-btn" disabled>Tipp</button>
+        <button type="button" id="skip-btn" disabled>Überspringen</button>
+      </form>
+
+      <div class="feedback" id="feedback" aria-live="polite"></div>
+
+      <div id="results" class="results" aria-live="polite"></div>
+
+      <div class="progress">
+        <span id="counter">0 / 50</span>
+        <div class="bar"><div id="bar-fill"></div></div>
+        <button id="restart-btn" class="pill" style="display:none">Neu</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
