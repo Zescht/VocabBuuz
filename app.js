@@ -11,163 +11,59 @@
     return a;
   };
 
-  // ---------- Data (GENAU 50 Karten) ----------
+  // ---------- Data (50) ----------
   const CARDS = [
-    { en'in the vicinity of', de'in der Nähe von', sol[
-          'in der Nähe von'
-        ] },
-    { en'to like (something)', de'gefallen (etwas)', sol[
-          'gefallen (etwas)',
-          'gefallen',
-          'gefallen etwas'
-        ] },
-    { en'to consist (of something)', de'(aus etwas) bestehen', sol[
-          'aus etwas bestehen',
-          'bestehen',
-          '(aus etwas) bestehen'
-        ] },
-    { en'should', de'sollst = sollen', sol[
-          'sollst',
-          'sollen'
-        ] },
-    { en'must', de'must = müssen', sol[
-          'must',
-          'müssen'
-        ] },
-    { en'I must inform you', de'Ich muss Sie informieren', sol[
-          'Ich muss Sie informieren'
-        ] },
-    { en'previous', de'vorherig', sol[
-          'vorherig'
-        ] },
-    { en'earliest', de'frühestens', sol[
-          'frühestens'
-        ] },
-    { en'from', de'von', sol[
-          'von'
-        ] },
-    { en'from home', de'von zu Hause', sol[
-          'von zu Hause'
-        ] },
-    { en'to do', de'tun', sol[
-          'tun'
-        ] },
-    { en'what a company does for the health of its employees', de'was eine Firma für die Gesundheit ihrer Mitarbeiter tut', sol[
-          'was eine Firma für die Gesundheit ihrer Mitarbeiter tut'
-        ] },
-    { en'to taste', de'schmecken', sol[
-          'schmecken'
-        ] },
-    { en'it tastes good', de'Es schmeckt gut', sol[
-          'Es schmeckt gut'
-        ] },
-    { en'everywhere', de'überall', sol[
-          'überall'
-        ] },
-    { en'to receive', de'bekommen', sol[
-          'bekommen'
-        ] },
-    { en'to become', de'werden', sol[
-          'werden'
-        ] },
-    { en'the company', de'die Firma', sol[
-          'die Firma'
-        ] },
-    { en'to miss', de'fehlen', sol[
-          'fehlen'
-        ] },
-    { en'in the past (for this sentence)', de'früher', sol[
-          'früher'
-        ] },
-    { en'for that', de'dafür', sol[
-          'dafür'
-        ] },
-    { en'I have no time for that', de'Ich habe keine Zeit dafür', sol[
-          'Ich habe keine Zeit dafür'
-        ] },
-    { en'I have no space for that', de'Ich habe keinen Platz dafür', sol[
-          'Ich habe keinen Platz dafür'
-        ] },
-    { en'after', de'danach', sol[
-          'danach'
-        ] },
-    { en'to feel', de'(sich) fühlen', sol[
-          'sich fühlen',
-          'fühlen',
-          '(sich) fühlen'
-        ] },
-    { en'there', de'dort', sol[
-          'dort'
-        ] },
-    { en'there', de'da', sol[
-          'da'
-        ] },
-    { en'besides that  furthermore', de'außerdem', sol[
-          'außerdem'
-        ] },
-    { en'fresh vegetables', de'frisches Gemüse', sol[
-          'frisches Gemüse'
-        ] },
-    { en'to laugh', de'lachen', sol[
-          'lachen'
-        ] },
-    { en'to clean', de'putzen', sol[
-          'putzen'
-        ] },
-    { en'difficult', de'schwierig', sol[
-          'schwierig'
-        ] },
-    { en'rather  pretty  fairly', de'ziemlich', sol[
-          'ziemlich'
-        ] },
-    { en'to change', de'sich ändern', sol[
-          'sich ändern'
-        ] },
-    { en'to try', de'versuchen (etwas)', sol[
-          'versuchen (etwas)',
-          'versuchen etwas',
-          'versuchen'
-        ] },
-    { en'to call', de'anrufen', sol[
-          'anrufen'
-        ] },
-    { en'the dish', de'das Gericht', sol[
-          'das Gericht'
-        ] },
-    { en'before  previously (in terms of time)', de'vorher', sol[
-          'vorher'
-        ] },
-    { en'never (before)', de'noch nie', sol[
-          'noch nie'
-        ] },
-    { en'all the time  constantly', de'dauernd', sol[
-          'dauernd'
-        ] },
-    { en'absolutely  under any circumstance', de'unbedingt', sol[
-          'unbedingt'
-        ] },
-    { en'a few  a little (quantity)', de'wenig', sol[
-          'wenig'
-        ] },
-    { en'little (description)', de'klein', sol[
-          'klein'
-        ] },
-    { en'order (rarely reserve)', de'bestellen', sol[
-          'bestellen'
-        ] },
-    { en'to open up', de'aufmachen', sol[
-          'aufmachen'
-        ] },
-    { en'clear', de'klar', sol[
-          'klar'
-        ] },
-    { en'maybe', de'vielleicht', sol[
-          'vielleicht'
-        ] },
-    { en'rich', de'reich', sol[
-          'reich'
-        ] },
-  ];  49 items
+    { en:'car', de:'das Auto', sol:['das auto'] },
+    { en:'house', de:'das Haus', sol:['das haus'] },
+    { en:'dog', de:'der Hund', sol:['der hund'] },
+    { en:'cat', de:'die Katze', sol:['die katze'] },
+    { en:'apple', de:'der Apfel', sol:['der apfel'] },
+    { en:'book', de:'das Buch', sol:['das buch'] },
+    { en:'water', de:'das Wasser', sol:['das wasser'] },
+    { en:'chair', de:'der Stuhl', sol:['der stuhl'] },
+    { en:'table', de:'der Tisch', sol:['der tisch'] },
+    { en:'bed', de:'das Bett', sol:['das bett'] },
+    { en:'city', de:'die Stadt', sol:['die stadt'] },
+    { en:'country', de:'das Land', sol:['das land'] },
+    { en:'friend', de:'der Freund / die Freundin', sol:['der freund','die freundin'] },
+    { en:'mother', de:'die Mutter', sol:['die mutter'] },
+    { en:'father', de:'der Vater', sol:['der vater'] },
+    { en:'brother', de:'der Bruder', sol:['der bruder'] },
+    { en:'sister', de:'die Schwester', sol:['die schwester'] },
+    { en:'child', de:'das Kind', sol:['das kind'] },
+    { en:'school', de:'die Schule', sol:['die schule'] },
+    { en:'work', de:'die Arbeit', sol:['die arbeit'] },
+    { en:'money', de:'das Geld', sol:['das geld'] },
+    { en:'time', de:'die Zeit', sol:['die zeit'] },
+    { en:'day', de:'der Tag', sol:['der tag'] },
+    { en:'night', de:'die Nacht', sol:['die nacht'] },
+    { en:'morning', de:'der Morgen', sol:['der morgen'] },
+    { en:'evening', de:'der Abend', sol:['der abend'] },
+    { en:'week', de:'die Woche', sol:['die woche'] },
+    { en:'year', de:'das Jahr', sol:['das jahr'] },
+    { en:'road', de:'die Straße', sol:['die straße','die strasse'] },
+    { en:'train', de:'der Zug', sol:['der zug'] },
+    { en:'bus', de:'der Bus', sol:['der bus'] },
+    { en:'airplane', de:'das Flugzeug', sol:['das flugzeug'] },
+    { en:'bicycle', de:'das Fahrrad / das Rad', sol:['das fahrrad','das rad'] },
+    { en:'ship', de:'das Schiff', sol:['das schiff'] },
+    { en:'window', de:'das Fenster', sol:['das fenster'] },
+    { en:'door', de:'die Tür', sol:['die tür','die tuer'] },
+    { en:'computer', de:'der Computer', sol:['der computer'] },
+    { en:'phone', de:'das Telefon / das Handy', sol:['das telefon','das handy'] },
+    { en:'key', de:'der Schlüssel', sol:['der schlüssel','der schluessel'] },
+    { en:'bread', de:'das Brot', sol:['das brot'] },
+    { en:'milk', de:'die Milch', sol:['die milch'] },
+    { en:'coffee', de:'der Kaffee', sol:['der kaffee'] },
+    { en:'tea', de:'der Tee', sol:['der tee'] },
+    { en:'sugar', de:'der Zucker', sol:['der zucker'] },
+    { en:'salt', de:'das Salz', sol:['das salz'] },
+    { en:'rain', de:'der Regen', sol:['der regen'] },
+    { en:'snow', de:'der Schnee', sol:['der schnee'] },
+    { en:'sun', de:'die Sonne', sol:['die sonne'] },
+    { en:'moon', de:'der Mond', sol:['der mond'] },
+    { en:'star', de:'der Stern', sol:['der stern'] },
+  ];
 
   // ---------- State & Elements ----------
   let deck=[], idx=-1, answered=0, ok=0, bad=0, locked=false, awaitNext=false;
@@ -342,5 +238,3 @@
     enableInputs(false); updateProgress();
   });
 })();
-
-
