@@ -49,6 +49,7 @@ body{
   border:1px solid #25407a;background:linear-gradient(180deg,#1e3a8a,#0f2a6a);
   color:white;box-shadow:0 10px 25px rgba(0,0,0,.35);cursor:pointer;
 }
+.start-btn:hover{filter:brightness(1.1)}
 .start-sub{ font-size:12px; color:#94a3b8; margin-top:0; line-height:1; }
 
 /* Overlay-Bild über dem Wort */
@@ -73,6 +74,7 @@ body{
 .answer-form input{flex:1;padding:12px 14px;border-radius:12px;border:1px solid #24324e;background:#0b1224;color:var(--text);outline:none}
 .answer-form button{padding:12px 14px;border-radius:12px;border:1px solid #223150;background:#0b1428;color:var(--text);cursor:pointer}
 .answer-form button:hover{filter:brightness(1.08)}
+.answer-form button:disabled{opacity:0.5;cursor:not-allowed}
 
 .feedback{min-height:24px;color:#cbd5e1}
 .feedback .ok{color:var(--ok);font-weight:700}
@@ -82,7 +84,8 @@ body{
 .bar{flex:1;height:10px;background:#0c1326;border-radius:999px;overflow:hidden;border:1px solid #1f2a44}
 #bar-fill{height:100%;width:0%;background:linear-gradient(90deg,#2563eb,#22c55e)}
 #counter{font-variant-numeric:tabular-nums}
-.pill{padding:4px 10px;border-radius:999px;font-size:12px;border:1px solid #223150;background:#0b1428;color:#cbd5e1}
+.pill{padding:4px 10px;border-radius:999px;font-size:12px;border:1px solid #223150;background:#0b1428;color:#cbd5e1;cursor:pointer}
+.pill:hover{filter:brightness(1.1)}
 
 .results{width:min(680px,90vw);display:none;gap:16px}
 .results.show{display:grid;grid-template-columns:1fr 1fr}
