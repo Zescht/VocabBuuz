@@ -11,399 +11,58 @@
     return a;
   };
 
-  // ---------- Data (50) ----------
+  // ---------- Data (EXACT vocabulary from German.xlsx) ----------
   const CARDS = [
-    { en:'in the vicinity of', de:'in der Nähe von', sol:[
-          'in der Nähe von'
-        ] },
-    { en:'to like (something)', de:'gefallen (etwas)', sol:[
-          'gefallen (etwas)',
-          'gefallen',
-          'gefallen etwas'
-        ] },
-    { en:'to consist (of something)', de:'(aus etwas) bestehen', sol:[
-          'aus etwas bestehen',
-          'bestehen',
-          '(aus etwas) bestehen'
-        ] },
-    { en:'should', de:'sollst = sollen', sol:[
-          'sollst',
-          'sollen'
-        ] },
-    { en:'must', de:'must = müssen', sol:[
-          'must',
-          'müssen'
-        ] },
-    { en:'I must inform you', de:'Ich muss Sie informieren', sol:[
-          'Ich muss Sie informieren'
-        ] },
-    { en:'previous', de:'vorherig', sol:[
-          'vorherig'
-        ] },
-    { en:'the rest', de:'der Rest', sol:[
-          'der Rest'
-        ] },
-    { en:'just (now)', de:'gerade (eben)', sol:[
-          'gerade (eben)',
-          'gerade',
-          'eben'
-        ] },
-    { en:'suddenly', de:'plötzlich', sol:[
-          'plötzlich'
-        ] },
-    { en:'no longer', de:'nicht mehr', sol:[
-          'nicht mehr'
-        ] },
-    { en:'exact(ly)', de:'genau', sol:[
-          'genau'
-        ] },
-    { en:'immediately', de:'sofort', sol:[
-          'sofort'
-        ] },
-    { en:'for this reason', de:'aus diesem Grund', sol:[
-          'aus diesem Grund'
-        ] },
-    { en:'finally', de:'endlich', sol:[
-          'endlich'
-        ] },
-    { en:'that depends (on ...)', de:'das hängt (davon) ab', sol:[
-          'das hängt (davon) ab',
-          'das hängt davon ab',
-          'das hängt ab'
-        ] },
-    { en:'to depend on', de:'abhängen (von)', sol:[
-          'abhängen (von)',
-          'abhängen von',
-          'abhängen'
-        ] },
-    { en:'to turn (something) off', de:'(etwas) abstellen', sol:[
-          'etwas abstellen',
-          'abstellen'
-        ] },
-    { en:'to turn (something) on', de:'(etwas) anstellen', sol:[
-          'etwas anstellen',
-          'anstellen'
-        ] },
-    { en:'to arrive', de:'ankommen', sol:[
-          'ankommen'
-        ] },
-    { en:'I\'ll pick you up from the airport', de:'Ich werde dich am Flughafen abholen', sol:[
-          'Ich werde dich am Flughafen abholen',
-          'Ich werde dich abholen',
-          'ich werde dich am flughafen abholen'
-        ] },
-    { en:'to get off / leave a vehicle', de:'aussteigen', sol:[
-          'aussteigen'
-        ] },
-    { en:'to drive by', de:'vorbeifahren', sol:[
-          'vorbeifahren'
-        ] },
-    { en:'to enter', de:'eintreten', sol:[
-          'eintreten'
-        ] },
-    { en:'to deal with', de:'(sich) befassen (mit)', sol:[
-          'sich befassen (mit)',
-          'sich befassen mit',
-          'befassen',
-          'befassen mit'
-        ] },
-    { en:'to complain about', de:'(sich) beschweren (über)', sol:[
-          'sich beschweren (über)',
-          'sich beschweren über',
-          'beschweren'
-        ] },
-    { en:'to thank (someone) for', de:'(sich) bedanken (bei jmdm) für', sol:[
-          'sich bedanken (bei jmdm) für',
-          'sich bedanken bei jmdm für',
-          'bedanken'
-        ] },
-    { en:'to apply (for sth)', de:'(sich) bewerben (um etwas)', sol:[
-          'sich bewerben (um etwas)',
-          'sich bewerben um etwas',
-          'bewerben'
-        ] },
-    { en:'to get excited (about sth) / to be happy', de:'(sich) freuen (über etwas)', sol:[
-          'sich freuen (über etwas)',
-          'sich freuen über etwas',
-          'freuen'
-        ] },
-    { en:'to remember', de:'(sich) erinnern (an)', sol:[
-          'sich erinnern (an)',
-          'sich erinnern an',
-          'erinnern',
-          'erinnern an'
-        ] },
-    { en:'to be interested (in sth)', de:'(sich) interessieren (für)', sol:[
-          'sich interessieren (für)',
-          'sich interessieren für',
-          'interessieren',
-          'interessieren für'
-        ] },
-    { en:'to move (house)', de:'(um)ziehen', sol:[
-          'umziehen',
-          'ziehen'
-        ] },
-    { en:'to meet up', de:'(sich) treffen', sol:[
-          'sich treffen',
-          'treffen'
-        ] },
-    { en:'to agree (with s.o.)', de:'(jemandem) zustimmen', sol:[
-          'jemandem zustimmen',
-          'zustimmen'
-        ] },
-    { en:'to determine something', de:'(etwas) feststellen', sol:[
-          'feststellen',
-          'etwas feststellen'
-        ] },
-    { en:'to offer', de:'(etwas) anbieten', sol:[
-          'anbieten',
-          'etwas anbieten'
-        ] },
-    { en:'the offer', de:'das Angebot', sol:[
-          'das angebot'
-        ] },
-    { en:'the result', de:'das Ergebnis', sol:[
-          'das ergebnis'
-        ] },
-    { en:'to pay attention to', de:'aufpassen (auf)', sol:[
-          'aufpassen (auf)',
-          'aufpassen auf',
-          'aufpassen'
-        ] },
-    { en:'to cancel', de:'absagen', sol:[
-          'absagen'
-        ] },
-    { en:'to promise', de:'versprechen', sol:[
-          'versprechen'
-        ] },
-    { en:'the promise', de:'das Versprechen', sol:[
-          'das versprechen'
-        ] },
-    { en:'a prompt / a reminder', de:'die Erinnerung', sol:[
-          'die erinnerung'
-        ] },
-    { en:'independent / self-employed', de:'selbstständig', sol:[
-          'selbstständig',
-          'selbststaendig'
-        ] },
-    { en:'to change (sth)', de:'(etwas) verändern', sol:[
-          'etwas verändern',
-          'verändern'
-        ] },
-    { en:'the change', de:'die Veränderung', sol:[
-          'die veränderung',
-          'die veraenderung'
-        ] },
-    { en:'to add (sth)', de:'(etwas) hinzufügen', sol:[
-          'etwas hinzufügen',
-          'hinzufügen',
-          'hinzufuegen',
-          'etwas hinzufuegen'
-        ] },
-    { en:'to correct', de:'(etwas) korrigieren', sol:[
-          'etwas korrigieren',
-          'korrigieren'
-        ] },
-    { en:'the correction', de:'die Korrektur', sol:[
-          'die korrektur'
-        ] },
-    { en:'first (of all)', de:'zuerst', sol:[
-          'zuerst'
-        ] },
-    { en:'afterwards', de:'danach', sol:[
-          'danach'
-        ] },
-    { en:'meanwhile', de:'inzwischen', sol:[
-          'inzwischen'
-        ] },
-    { en:'at least', de:'mindestens', sol:[
-          'mindestens'
-        ] },
-    { en:'at most', de:'höchstens', sol:[
-          'höchstens',
-          'hoechstens'
-        ] },
-    { en:'somehow', de:'irgendwie', sol:[
-          'irgendwie'
-        ] },
-    { en:'anyway / in any case', de:'auf jeden Fall', sol:[
-          'auf jeden Fall'
-        ] },
-    { en:'maybe', de:'vielleicht', sol:[
-          'vielleicht'
-        ] },
-    { en:'possible', de:'möglich', sol:[
-          'möglich',
-          'moeglich'
-        ] },
-    { en:'impossible', de:'unmöglich', sol:[
-          'unmöglich',
-          'unmoeglich'
-        ] },
-    { en:'fortunately', de:'zum Glück', sol:[
-          'zum Glück',
-          'zum glueck'
-        ] },
-    { en:'unfortunately', de:'leider', sol:[
-          'leider'
-        ] },
-    { en:'to be worth it', de:'(sich) lohnen', sol:[
-          'lohnt sich',
-          'sich lohnen',
-          'lohnen'
-        ] },
-    { en:'advantage', de:'der Vorteil', sol:[
-          'der vorteil'
-        ] },
-    { en:'disadvantage', de:'der Nachteil', sol:[
-          'der nachteil'
-        ] },
-    { en:'to give up', de:'(etwas) aufgeben', sol:[
-          'aufgeben',
-          'etwas aufgeben'
-        ] },
-    { en:'to give away', de:'(etwas) weggeben', sol:[
-          'weggeben',
-          'etwas weggeben'
-        ] },
-    { en:'to be enough', de:'(etwas) reichen', sol:[
-          'etwas reichen',
-          'reichen'
-        ] },
-    { en:'to pass (an exam)', de:'(eine Prüfung) bestehen', sol:[
-          'eine Prüfung bestehen',
-          'bestehen'
-        ] },
-    { en:'to cancel (an appointment)', de:'(einen Termin) absagen', sol:[
-          'einen Termin absagen',
-          'absagen'
-        ] },
-    { en:'to postpone (an appointment)', de:'(einen Termin) verschieben', sol:[
-          'einen Termin verschieben',
-          'verschieben'
-        ] },
-    { en:'to invite (someone)', de:'(jemanden) einladen', sol:[
-          'jemanden einladen',
-          'einladen'
-        ] },
-    { en:'invitation', de:'die Einladung', sol:[
-          'die Einladung'
-        ] },
-    { en:'to refuse (sth)', de:'(etwas) verweigern', sol:[
-          'etwas verweigern',
-          'verweigern'
-        ] },
-    { en:'to allow (sth)', de:'(etwas) erlauben', sol:[
-          'etwas erlauben',
-          'erlauben'
-        ] },
-    { en:'permission', de:'die Erlaubnis', sol:[
-          'die erlaubnis'
-        ] },
-    { en:'to forbid / prohibit', de:'(etwas) verbieten', sol:[
-          'etwas verbieten',
-          'verbieten'
-        ] },
-    { en:'the ban / prohibition', de:'das Verbot', sol:[
-          'das Verbot'
-        ] },
-    { en:'to smoke', de:'rauchen', sol:[
-          'rauchen'
-        ] },
-    { en:'smoking', de:'das Rauchen', sol:[
-          'das rauchen'
-        ] },
-    { en:'to quit smoking', de:'mit dem Rauchen aufhören', sol:[
-          'mit dem Rauchen aufhören',
-          'aufhören zu rauchen',
-          'aufhören',
-          'aufhoeren'
-        ] },
-    { en:'to lose weight', de:'abnehmen', sol:[
-          'abnehmen'
-        ] },
-    { en:'to gain weight', de:'zunehmen', sol:[
-          'zunehmen'
-        ] },
-    { en:'to feel better', de:'(sich) besser fühlen', sol:[
-          'sich besser fühlen',
-          'besser fühlen',
-          'fuehlen'
-        ] },
-    { en:'to feel worse', de:'(sich) schlechter fühlen', sol:[
-          'sich schlechter fühlen',
-          'schlechter fühlen'
-        ] },
-    { en:'to be sick (ill)', de:'krank sein', sol:[
-          'krank sein'
-        ] },
-    { en:'healthy', de:'gesund', sol:[
-          'gesund'
-        ] },
-    { en:'the health', de:'die Gesundheit', sol:[
-          'die gesundheit'
-        ] },
-    { en:'to treat (s.o.)', de:'(jemanden) behandeln', sol:[
-          'jemanden behandeln',
-          'behandeln'
-        ] },
-    { en:'the treatment', de:'die Behandlung', sol:[
-          'die behandlung'
-        ] },
-    { en:'the appointment (doctor etc.)', de:'der Termin', sol:[
-          'der termin'
-        ] },
-    { en:'the prescription', de:'das Rezept', sol:[
-          'das rezept'
-        ] },
-    { en:'the medication', de:'die Medikamente', sol:[
-          'die medikamente'
-        ] },
-    { en:'the pain', de:'der Schmerz', sol:[
-          'der schmerz'
-        ] },
-    { en:'to hurt / to be painful', de:'wehtun', sol:[
-          'wehtun'
-        ] },
-    { en:'to injure (s.o.)', de:'(jemanden) verletzen', sol:[
-          'jemanden verletzen',
-          'verletzen'
-        ] },
-    { en:'the injury', de:'die Verletzung', sol:[
-          'die verletzung'
-        ] },
-    { en:'the accident', de:'der Unfall', sol:[
-          'der unfall'
-        ] },
-    { en:'to happen / occur', de:'passieren', sol:[
-          'passieren'
-        ] },
-    { en:'safe', de:'sicher', sol:[
-          'sicher'
-        ] },
-    { en:'dangerous', de:'gefährlich', sol:[
-          'gefährlich',
-          'gefaehrlich'
-        ] },
-    { en:'the danger', de:'die Gefahr', sol:[
-          'die gefahr'
-        ] },
-    { en:'(to) pay attention (watch out!)', de:'Achtung!', sol:[
-          'Achtung'
-        ] },
-    { en:'to be careful', de:'vorsichtig sein', sol:[
-          'vorsichtig sein'
-        ] },
-    { en:'careful', de:'vorsichtig', sol:[
-          'vorsichtig'
-        ] },
-    { en:'careless', de:'unvorsichtig', sol:[
-          'unvorsichtig'
-        ] },
-    { en:'rich', de:'reich', sol:[
-          'reich'
-        ] },
-  ]; // 49 items
+    { en:'in the vicinity of', de:'in der Nähe von', sol:['in der Nähe von'] },
+    { en:'to like (something)', de:'gefallen (etwas)', sol:['gefallen (etwas)', 'gefallen', 'gefallen etwas'] },
+    { en:'to consist (of something)', de:'(aus etwas) bestehen', sol:['(aus etwas) bestehen', 'aus etwas bestehen', 'bestehen'] },
+    { en:'should', de:'sollst = sollen', sol:['sollst', 'sollen'] },
+    { en:'must', de:'must = müssen', sol:['must', 'müssen'] },
+    { en:'I must inform you', de:'Ich muss Sie informieren', sol:['Ich muss Sie informieren'] },
+    { en:'previous', de:'vorherig', sol:['vorherig'] },
+    { en:'earliest', de:'frühestens', sol:['frühestens'] },
+    { en:'from', de:'von', sol:['von'] },
+    { en:'from home', de:'von zu Hause', sol:['von zu Hause'] },
+    { en:'to do', de:'tun', sol:['tun'] },
+    { en:'what a company does for the health of its employees', de:'was eine Firma für die Gesundheit ihrer Mitarbeiter tut', sol:['was eine Firma für die Gesundheit ihrer Mitarbeiter tut'] },
+    { en:'to taste', de:'schmecken', sol:['schmecken'] },
+    { en:'it tastes good', de:'Es schmeckt gut', sol:['Es schmeckt gut'] },
+    { en:'everywhere', de:'überall', sol:['überall'] },
+    { en:'to receive', de:'bekommen', sol:['bekommen'] },
+    { en:'to become', de:'werden', sol:['werden'] },
+    { en:'the company', de:'die Firma', sol:['die Firma'] },
+    { en:'to miss', de:'fehlen', sol:['fehlen'] },
+    { en:'in the past (for this sentence)', de:'früher', sol:['früher'] },
+    { en:'for that', de:'dafür', sol:['dafür'] },
+    { en:'I have no time for that', de:'Ich habe keine Zeit dafür', sol:['Ich habe keine Zeit dafür'] },
+    { en:'I have no space for that', de:'Ich habe keinen Platz dafür', sol:['Ich habe keinen Platz dafür'] },
+    { en:'after', de:'danach', sol:['danach'] },
+    { en:'to feel', de:'(sich) fühlen', sol:['(sich) fühlen', 'sich fühlen', 'fühlen'] },
+    { en:'there', de:'dort', sol:['dort'] },
+    { en:'there', de:'da', sol:['da'] },
+    { en:'besides that / furthermore', de:'außerdem', sol:['außerdem'] },
+    { en:'fresh vegetables', de:'frisches Gemüse', sol:['frisches Gemüse'] },
+    { en:'to laugh', de:'lachen', sol:['lachen'] },
+    { en:'to clean', de:'putzen', sol:['putzen'] },
+    { en:'difficult', de:'schwierig', sol:['schwierig'] },
+    { en:'rather / pretty / fairly', de:'ziemlich', sol:['ziemlich'] },
+    { en:'to change', de:'sich ändern', sol:['sich ändern', 'ändern'] },
+    { en:'to try', de:'versuchen (etwas)', sol:['versuchen (etwas)', 'versuchen'] },
+    { en:'to call', de:'anrufen', sol:['anrufen'] },
+    { en:'the dish', de:'das Gericht', sol:['das Gericht'] },
+    { en:'before / previously (in terms of time)', de:'vorher', sol:['vorher'] },
+    { en:'never (before)', de:'noch nie', sol:['noch nie'] },
+    { en:'all the time / constantly', de:'dauernd', sol:['dauernd'] },
+    { en:'absolutely / under any circumstance', de:'unbedingt', sol:['unbedingt'] },
+    { en:'one of', de:'eines der', sol:['eines der'] },
+    { en:'a few / a little (quantity)', de:'wenig', sol:['wenig'] },
+    { en:'little (description)', de:'klein', sol:['klein'] },
+    { en:'order (rarely reserve)', de:'bestellen', sol:['bestellen'] },
+    { en:'to open up', de:'aufmachen', sol:['aufmachen'] },
+    { en:'clear', de:'klar', sol:['klar'] },
+    { en:'maybe', de:'vielleicht', sol:['vielleicht'] },
+    { en:'rich', de:'reich', sol:['reich'] }
+  ];
 
   const STATUS_IMG = { ok:'https://i.imgur.com/RQ3mDTH.png', bad:'https://i.imgur.com/9BACXIX.png' };
 
